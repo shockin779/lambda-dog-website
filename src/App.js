@@ -35,8 +35,6 @@ function App(props) {
           <img key={index} src={image} alt="Dog" />
         ))}
       </div>
-
-      <button onClick={() => setImages([])}>Clear Images</button>
     </>
   );
 }
