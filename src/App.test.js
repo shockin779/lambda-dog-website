@@ -8,7 +8,6 @@ import App from "./App";
 test("Render the heading", async () => {
   // render our React app into an in-memory DOM so we can test against it
   const wrapper = rtl.render(<App />);
-  await wrapper.findAllByAltText(/dog/i);
 
   // element is now our dom element that we can test against
   const element = wrapper.getByText(/the dog website/i);
@@ -19,7 +18,6 @@ test("Render the heading", async () => {
 
 test("Render count input", async () => {
   const wrapper = rtl.render(<App />);
-  await wrapper.findAllByAltText(/dog/i);
 
   // using a regular expression instead of a string allows our
   // query to be much more flexible. for example, if the text becomes
