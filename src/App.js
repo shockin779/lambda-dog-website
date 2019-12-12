@@ -15,7 +15,7 @@ function App(props) {
   //const [images] = useState([]);
 
   useEffect(() => {
-    
+    // get breeds
     const getBreedsList = async () => {
       let res = await axios.get('https://dog.ceo/api/breeds/list/all');
       let breedArray = Object.entries(res.data.message)
